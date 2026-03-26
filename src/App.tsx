@@ -1,15 +1,15 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { 
-  Anchor, 
-  Droplets, 
-  Globe, 
-  Package, 
-  Phone, 
-  Ship, 
-  Menu, 
-  X, 
-  ArrowRight, 
+import {
+  Anchor,
+  Droplets,
+  Globe,
+  Package,
+  Phone,
+  Ship,
+  Menu,
+  X,
+  ArrowRight,
   CheckCircle2,
   Fish,
   Waves
@@ -44,7 +44,7 @@ export default function App() {
               <Waves className="h-8 w-8 text-ocean-400" />
               <span className="text-2xl font-serif font-bold text-white tracking-tight">AquaTrade<span className="text-ocean-400">Global</span></span>
             </div>
-            
+
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#about" className="text-slate-200 hover:text-white transition-colors text-sm font-medium uppercase tracking-wider">About</a>
@@ -56,7 +56,7 @@ export default function App() {
             </div>
 
             {/* Mobile Menu Button */}
-            <button 
+            <button
               className="md:hidden text-white"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -81,21 +81,21 @@ export default function App() {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <video 
-            autoPlay 
-            loop 
-            muted 
+          <video
+            autoPlay
+            loop
+            muted
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/hero.mp4" type="video/mp4" />
+            <source src="/aq.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-ocean-950/90 via-ocean-900/70 to-transparent"></div>
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -105,7 +105,7 @@ export default function App() {
               <Globe className="w-3 h-3" /> Global Import & Export
             </div>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-[1.1] mb-6">
-              Mastering the Art of <br/>
+              Mastering the Art of <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-ocean-300 to-teal-200">Aquatic Environments</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl font-light leading-relaxed">
@@ -154,9 +154,9 @@ export default function App() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div {...fadeIn} className="relative">
               <div className="aspect-[4/5] rounded-2xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80" 
-                  alt="Custom Aquarium Manufacturing" 
+                <img
+                  src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1000&q=80"
+                  alt="Custom Aquarium Manufacturing"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
@@ -167,7 +167,7 @@ export default function App() {
                 <p className="text-sm text-ocean-100">Every tank is precision-engineered for structural integrity and optical clarity.</p>
               </div>
             </motion.div>
-            
+
             <motion.div {...fadeIn}>
               <h2 className="text-sm font-bold text-ocean-600 uppercase tracking-widest mb-3">Our Core Business</h2>
               <h3 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6 leading-tight">
@@ -176,7 +176,7 @@ export default function App() {
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 At AquaTrade Global, our primary focus is the design, fabrication, and global export of premium acrylic and glass aquariums. From high-end residential displays to massive commercial installations, we deliver aquatic canvases that transform spaces.
               </p>
-              
+
               <ul className="space-y-4 mb-10">
                 {[
                   "Custom Acrylic & Starphire Glass Fabrication",
@@ -190,7 +190,7 @@ export default function App() {
                   </li>
                 ))}
               </ul>
-              
+
               <a href="#contact" className="inline-flex items-center gap-2 text-ocean-600 font-semibold hover:text-ocean-800 transition-colors">
                 Discuss your custom build <ArrowRight className="w-4 h-4" />
               </a>
@@ -226,7 +226,7 @@ export default function App() {
                 desc: "Design and supply of commercial-grade filtration, skimming, and water chemistry management systems for large-scale setups."
               }
             ].map((service, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 {...fadeIn}
                 transition={{ delay: i * 0.1 }}
@@ -259,13 +259,13 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
             {/* Large Item */}
-            <motion.div 
+            <motion.div
               {...fadeIn}
               className="md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden group"
             >
-              <img 
-                src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=1200&q=80" 
-                alt="Marine Fish" 
+              <img
+                src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=1200&q=80"
+                alt="Marine Fish"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
@@ -278,13 +278,13 @@ export default function App() {
             </motion.div>
 
             {/* Small Item 1 */}
-            <motion.div 
+            <motion.div
               {...fadeIn} transition={{ delay: 0.1 }}
               className="relative rounded-3xl overflow-hidden group"
             >
-              <img 
-                src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?auto=format&fit=crop&w=600&q=80" 
-                alt="Corals" 
+              <img
+                src="https://images.unsplash.com/photo-1582967788606-a171c1080cb0?auto=format&fit=crop&w=600&q=80"
+                alt="Corals"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
               />
@@ -296,7 +296,7 @@ export default function App() {
             </motion.div>
 
             {/* Small Item 2 */}
-            <motion.div 
+            <motion.div
               {...fadeIn} transition={{ delay: 0.2 }}
               className="relative rounded-3xl overflow-hidden group bg-ocean-900 p-8 flex flex-col justify-center border border-ocean-800"
             >
@@ -321,7 +321,7 @@ export default function App() {
               <p className="text-lg text-slate-600 mb-10">
                 Whether you need a custom 10,000-gallon public display or regular shipments of premium marine life, our team is ready to facilitate your global aquatic needs.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-ocean-50 rounded-full flex items-center justify-center shrink-0">
@@ -329,7 +329,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">Global Headquarters</h4>
-                    <p className="text-slate-600">1200 Aquatic Way, Suite 100<br/>Miami, FL 33101, USA</p>
+                    <p className="text-slate-600">1200 Aquatic Way, Suite 100<br />Miami, FL 33101, USA</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -338,7 +338,7 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-bold text-slate-900">Contact</h4>
-                    <p className="text-slate-600">+1 (555) 019-8472<br/>export@aquatradeglobal.com</p>
+                    <p className="text-slate-600">+1 (555) 019-8472<br />export@aquatradeglobal.com</p>
                   </div>
                 </div>
               </div>
